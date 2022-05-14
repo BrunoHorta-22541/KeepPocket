@@ -1,2 +1,0 @@
-# KeepPocket
-Projeto PAC

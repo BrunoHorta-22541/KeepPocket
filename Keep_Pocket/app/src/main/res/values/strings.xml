@@ -27,6 +27,7 @@
     <string name="category">Category</string>
     <string name="description">Description</string>
     <string name="categoryName">Category Name</string>
+    <string name="categoryColor">Category Color</string>
     <string name="limitValue">Limit Value</string>
 
 

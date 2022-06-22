@@ -14,8 +14,6 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-    private static SimpleDateFormat sdfSameDay = new SimpleDateFormat("HH:mm:ss");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textViewUsername = findViewById(R.id.textViewUsername);
         textViewUsername.setText(activeSession.getUsername());
 
-        TextView textViewLoginDate = findViewById(R.id.textViewLoginDate);
-        Date date = new Date(activeSession.getSessionDate());
-        textViewLoginDate.setText(sdf.format(date));
+
     }
 
     public void logout() {

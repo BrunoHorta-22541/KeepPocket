@@ -29,8 +29,8 @@ public class SessionManager {
 
     public static pt.estig.twdm.pdm.keep_pocket.Session getActiveSession(Context context) {
         String username = getSharedPreferences(context).getString("username", null);
-        long sessionDate = getSharedPreferences(context).getLong("loginDate",0);
-        return new pt.estig.twdm.pdm.keep_pocket.Session(username, sessionDate);
+
+        return new pt.estig.twdm.pdm.keep_pocket.Session(username);
     }
 
     public static boolean sessionExists(Context context) {

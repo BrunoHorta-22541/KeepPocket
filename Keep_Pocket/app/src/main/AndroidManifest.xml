@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Keep_Pocket">
         <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LimitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpensesActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity

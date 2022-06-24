@@ -8,7 +8,7 @@ Aplicação de Gestão para gastos económicos
 * Bruno Mota
 * Dinis Dias
 * Rodrigo Serafim
-* 
+
 ## Requisitos
 ### Requisitos Minimos
 * Vários Requisitos

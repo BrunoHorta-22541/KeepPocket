@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Keep_Pocket</string>
     <string name="login">Login</string>
+    <string name="save">Save</string>
 
 
     <string name="menu_home">Home</string>
@@ -41,5 +42,7 @@
     <string name="listIncome">Income List</string>
     <string name="listCategory">Category List</string>
     <string name="listLimits">Limit List</string>
+
+
 
 </resources>

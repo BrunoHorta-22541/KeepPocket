@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         User loggedInUser = LoginManager.validateUser(email, password);
         if (loggedInUser != null) {
             // user válido
-            SessionManager.saveSession(this, email, System.currentTimeMillis(), checkBoxRemeberMe.isChecked());
+            SessionManager.saveSession(this, email, checkBoxRemeberMe.isChecked(), loggedInUser.getId());
             Toast.makeText(this, "Login com sucesso", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, pt.estig.twdm.pdm.keep_pocket.MainActivity.class);
             startActivity(intent);

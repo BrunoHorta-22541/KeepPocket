@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IncomeActivity">
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/incomeRecyclerView"
         android:layout_width="409dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"

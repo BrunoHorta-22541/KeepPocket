@@ -29,3 +29,4 @@ Aplicação de Gestão para gastos económicos
 
 ## Links Importantes
 * [Artigo](https://developer.android.com/training/data-storage/room/)
+* [Artigo](https://stackoverflow.com/questions/61875405/fill-spinner-with-room-database)

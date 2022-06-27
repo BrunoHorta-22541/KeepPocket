@@ -49,8 +49,8 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
     public void onCategoryLongClicked(long categoryId) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("Delete Income?");
-        builder.setMessage("Do you really want to delete this Income?");
+        builder.setTitle("Delete Category?");
+        builder.setMessage("Do you really want to delete this Category?");
 
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override

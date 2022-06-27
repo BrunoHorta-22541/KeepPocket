@@ -20,6 +20,14 @@ public interface CategoryDAO {
     @Query("SELECT * FROM Category WHERE idUser = :userId")
     List<Category> getUserCategory(long userId);
 
+    @Query("SELECT categoryName FROM Category WHERE idUser = :userId")
+    List<String> getUserCategoryName(long userId);
+
+    @Query("SELECT * FROM Category WHERE idUser = :userId AND categoryName = :nameCategory")
+    Category getCategoryByName(long userId, String nameCategory);
+
+
+
 
     @Delete
     void delete(Category category);

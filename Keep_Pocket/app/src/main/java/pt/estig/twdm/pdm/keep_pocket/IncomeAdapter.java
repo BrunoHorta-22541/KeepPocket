@@ -69,7 +69,7 @@ public class IncomeAdapter extends RecyclerView.Adapter<IncomeAdapter.IncomeView
         private TextView movementsDate;
         private TextView movementsvalue;
         private Context context;
-        private static SimpleDateFormat dates= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        private static SimpleDateFormat dates= new SimpleDateFormat("dd/MM/yyyy");
         public IncomeViewHolder(@NonNull View rootView, Context context){
             super(rootView);
             this.context = context;
@@ -77,7 +77,7 @@ public class IncomeAdapter extends RecyclerView.Adapter<IncomeAdapter.IncomeView
             this.description = itemView.findViewById(R.id.incomeDescription);
             this.movementsDate = itemView.findViewById(R.id.incomeDate);
             this.movementsvalue = itemView.findViewById(R.id.incomePrice);
-            this.categoryName = itemView.findViewById(R.id.categoryName);
+            this.categoryName = itemView.findViewById(R.id.incomeCategory);
 
         }
         public void setDescription(String description){
@@ -88,7 +88,8 @@ public class IncomeAdapter extends RecyclerView.Adapter<IncomeAdapter.IncomeView
             this.movementsDate.setText(dates.format(date));
         }
         public void setMovementsvalue(int movementsvalue){
-            this.movementsvalue.setText(movementsvalue);
+            String stringValueIncome = Integer.toString(movementsvalue);
+            this.movementsvalue.setText(stringValueIncome+"€");
         }
 
         public void setMovementsCategoryId(long categoryId){

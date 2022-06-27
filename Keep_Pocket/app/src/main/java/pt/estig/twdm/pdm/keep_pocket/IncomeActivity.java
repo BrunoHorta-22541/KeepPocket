@@ -99,4 +99,8 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
     }
 
 
+    public void addIncome(View view) {
+        Intent intent= new Intent (this, AddIncome.class);
+        startActivity(intent);
+    }
 }

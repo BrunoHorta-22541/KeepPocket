@@ -15,7 +15,6 @@ import java.util.List;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
     private final CategoryAdapterEventListener eventListener;
     private List<Category> categoryList;
-    private Category category;
 
     public CategoryAdapter(CategoryAdapterEventListener eventListener){
         this.eventListener = eventListener;

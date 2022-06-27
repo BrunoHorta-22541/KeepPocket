@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/insertCategory"
+        android:textColor="@color/colorText"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,7 @@
         android:ems="10"
         android:hint="@string/categoryName"
         android:inputType="textPersonName"
+        android:textColorHint="@color/colorText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -34,8 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="@color/colorText"
         android:onClick="saveCategory"
         android:text="@string/save"
+        android:textColor="#5C5C5C"
         app:layout_constraintEnd_toEndOf="@+id/categoryNameEditText"
         app:layout_constraintStart_toStartOf="@+id/categoryNameEditText"
         app:layout_constraintTop_toBottomOf="@+id/categoryNameEditText" />

@@ -7,6 +7,7 @@
     tools:context=".LimitActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLimit"
         android:layout_width="409dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
@@ -24,9 +25,11 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/colorText"
         android:clickable="true"
+        android:onClick="addLimit"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView7"

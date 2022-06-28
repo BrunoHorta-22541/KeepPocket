@@ -5,7 +5,6 @@
       <map>
         <entry key="..\:/Users/Biscas/Desktop/KeepPocket/Keep_Pocket/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/Biscas/Desktop/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_add_category.xml" value="0.2210144927536232" />
-        <entry key="..\:/Users/Biscas/Desktop/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_add_expenses.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/Biscas/Desktop/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_add_income.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/Biscas/Desktop/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_category.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/Biscas/Desktop/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_expenses.xml" value="0.2210144927536232" />
@@ -24,19 +23,13 @@
         <entry key="..\:/Users/Biscas/Desktop/Keep_Pocket/app/src/main/res/layout/activity_main.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/Biscas/Desktop/Keep_Pocket/app/src/main/res/layout/activity_signup.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/Biscas/Desktop/Keep_Pocket/app/src/main/res/menu/main_activity_menu.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_add_category.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_add_income.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_category.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_expenses.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_income.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_limit.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_login.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_main.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_signup.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/category_row.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/expenses_row.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/income_row.xml" value="0.2269021739130435" />
-        <entry key="..\:/Users/dinis/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/limit_row.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/Utilizador/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_add_income.xml" value="0.264" />
+        <entry key="..\:/Users/Utilizador/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_add_limit.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Utilizador/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_category.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Utilizador/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_limit.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Utilizador/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Utilizador/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/category_row.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/Utilizador/Documents/GitHub/KeepPocket/Keep_Pocket/app/src/main/res/layout/limit_row.xml" value="0.22780797101449277" />
       </map>
     </option>
   </component>

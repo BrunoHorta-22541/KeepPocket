@@ -11,13 +11,12 @@ import android.view.View;
 public class LimitActivity extends AppCompatActivity implements LimitAdapter.LimitAdapterEventListener {
 
     private LimitAdapter limitAdapter;
-    private RecyclerView recyclerViewLimit;
     private long userId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_limit);
-        recyclerViewLimit = findViewById(R.id.recyclerViewLimit);
+        RecyclerView recyclerViewLimit = findViewById(R.id.recyclerViewLimit);
         this.limitAdapter = new LimitAdapter(this);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerViewLimit.setAdapter(limitAdapter);

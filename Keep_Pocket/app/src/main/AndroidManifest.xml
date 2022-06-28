@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Keep_Pocket">
         <activity
+            android:name=".AddLimit"
+            android:exported="false" />
+        <activity
             android:name=".AddExpense"
             android:exported="false" />
         <activity

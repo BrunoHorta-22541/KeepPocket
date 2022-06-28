@@ -53,6 +53,7 @@ public class AddLimit extends AppCompatActivity implements AdapterView.OnItemSel
     }
 
     public void saveLimit(View view) {
+
         String limitValueString = this.editTextLimit.getText().toString();
         int limitValueInt = Integer.parseInt(limitValueString);
 
@@ -60,5 +61,8 @@ public class AddLimit extends AppCompatActivity implements AdapterView.OnItemSel
 
         Category categoryUpdate = new Category(category.getIdCategory(),category.getCategoryName(),limitValueInt,userId);
         Database.getInstance(this).getcategoryDAO().update(categoryUpdate);
+
+
     }
+
 }

@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExpenseDetails">
-
+    tools:context=".IncomeDetails">
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/colorText"
-        android:onClick="updateExpense"
+        android:onClick="updateIncome"
         android:text="@string/update"
         android:textColor="#5C5C5C"
-        app:layout_constraintEnd_toEndOf="@+id/editTextExpenseDetailsValue"
-        app:layout_constraintStart_toStartOf="@+id/editTextExpenseDetailsValue"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExpenseDetailsValue" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextIncomeDetailsValue"
+        app:layout_constraintStart_toStartOf="@+id/editTextIncomeDetailsValue"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIncomeDetailsValue" />
 
     <EditText
-        android:id="@+id/editTextExpenseDetailsValue"
+        android:id="@+id/editTextIncomeDetailsValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -28,21 +27,21 @@
         android:hint="@string/value"
         android:inputType="number"
         android:textColorHint="@color/colorText"
-        app:layout_constraintEnd_toEndOf="@+id/expenseDetailsCategorySpinner"
-        app:layout_constraintStart_toStartOf="@+id/expenseDetailsCategorySpinner"
-        app:layout_constraintTop_toBottomOf="@+id/expenseDetailsCategorySpinner" />
+        app:layout_constraintEnd_toEndOf="@+id/incomeDetailsCategorySpinner"
+        app:layout_constraintStart_toStartOf="@+id/incomeDetailsCategorySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/incomeDetailsCategorySpinner" />
 
     <Spinner
-        android:id="@+id/expenseDetailsCategorySpinner"
+        android:id="@+id/incomeDetailsCategorySpinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextExpensesDescriptionDetails"
-        app:layout_constraintStart_toStartOf="@+id/editTextExpensesDescriptionDetails"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExpensesDescriptionDetails" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextIncomeDescriptionDetails"
+        app:layout_constraintStart_toStartOf="@+id/editTextIncomeDescriptionDetails"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIncomeDescriptionDetails" />
 
     <EditText
-        android:id="@+id/editTextExpensesDescriptionDetails"
+        android:id="@+id/editTextIncomeDescriptionDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -59,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/detailsExpenses"
+        android:text="@string/detailsIncome"
         android:textColor="@color/colorText"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

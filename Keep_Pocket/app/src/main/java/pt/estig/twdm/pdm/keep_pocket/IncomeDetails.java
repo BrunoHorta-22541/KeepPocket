@@ -13,13 +13,13 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class IncomeDetails extends AppCompatActivity  implements AdapterView.OnItemSelectedListener {
     public static final String KEY_ID = "movementId";
     private List<String> categoryList;
-    private long expenseMovementId;
+    private long incomeMovementId;
     private long userId;
-    private EditText descriptionExpense;
-    private EditText valueExpense;
+    private EditText descriptionIncome;
+    private EditText valueIncome;
     private Spinner spinner;
     private String itemSelected;
     private Movements movements;
@@ -30,26 +30,22 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_expense_details);
+        setContentView(R.layout.activity_income_details);
 
-        this.expenseMovementId = getIntent().getExtras().getLong(KEY_ID);
+        this.incomeMovementId = getIntent().getExtras().getLong(KEY_ID);
         Session activeSession = SessionManager.getActiveSession(this);
         userId = activeSession.getUserid();
-        this.descriptionExpense = findViewById(R.id.editTextExpensesDescriptionDetails);
-        this.spinner = findViewById(R.id.expenseDetailsCategorySpinner);
-        this.valueExpense = findViewById(R.id.editTextExpenseDetailsValue);
+        this.descriptionIncome = findViewById(R.id.editTextIncomeDescriptionDetails);
+        this.spinner = findViewById(R.id.incomeDetailsCategorySpinner);
+        this.valueIncome = findViewById(R.id.editTextIncomeDetailsValue);
 
         categoryList = Database.getInstance(this).getcategoryDAO().getUserCategoryName(userId);
-        movements = Database.getInstance(this).getmovementsDAO().getById(expenseMovementId);
+        movements = Database.getInstance(this).getmovementsDAO().getById(incomeMovementId);
         categoryId = movements.getIdCategory();
         Category category = Database.getInstance(this).getcategoryDAO().getById(categoryId);
         spinnerStringValue = category.getCategoryName();
-        this.descriptionExpense.setText(movements.getDescription());
-        int positive = movements.getValue() * (-1);
-        String stringValueExpenses = Integer.toString(positive);
-        this.valueExpense.setText(stringValueExpenses);
-        this.originalInsertDate = movements.getMovementsDate();
-
+        this.descriptionIncome.setText(movements.getDescription());
+        //FALTA ACABAR
 
         spinnerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, new ArrayList<String>());
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -59,6 +55,7 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
         spinner.setSelection(getIndex(spinner, spinnerStringValue));
         spinner.setOnItemSelectedListener(this);
     }
+
     private int getIndex(Spinner spinner, String spinnerStringValue){
         for (int i=0;i<spinner.getCount();i++){
             if (spinner.getItemAtPosition(i).toString().equalsIgnoreCase(spinnerStringValue)){
@@ -69,6 +66,8 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
         return 0;
 
     }
+
+
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         itemSelected = (String)adapterView.getItemAtPosition(i);
@@ -81,16 +80,12 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
     public void onNothingSelected(AdapterView<?> adapterView) {
         Toast.makeText(this, "Nenhum item selecionado", Toast.LENGTH_SHORT).show();
     }
-    public void updateExpense(View view) {
-        String description = this.descriptionExpense.getText().toString();
-        String valueExpenseString = this.valueExpense.getText().toString();
-        int valueExpenseInt = Integer.parseInt(valueExpenseString);
-        int valueExpenseNegative= valueExpenseInt * (-1);
-        Category category = Database.getInstance(this).getcategoryDAO().getCategoryByName(userId, itemSelected);
-        Movements movements = new Movements(this.movements.getIdMovements(), userId, category.getIdCategory(),valueExpenseNegative, description, originalInsertDate);
-        Database.getInstance(this).getmovementsDAO().update(movements);
 
-        finish();
+    public void updateIncome(View view) {
+        String description = this.descriptionIncome.getText().toString();
+        String valueIncomeString = this.valueIncome.getText().toString();
+        //FALTA ACABAR
+
+
     }
-
 }

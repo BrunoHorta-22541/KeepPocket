@@ -45,7 +45,9 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
 
     @Override
     public void onIncomeClicked(long movementsId) {
-
+        Intent intent = new Intent(this, IncomeDetails.class);
+        intent.putExtra(IncomeDetails.KEY_ID, movementsId);
+        startActivity(intent);
     }
 
     @Override

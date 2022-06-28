@@ -4,51 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExpenseDetails">
-
+    tools:context=".LimitDetails">
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/colorText"
-        android:onClick="updateExpense"
+        android:onClick="updateLimit"
         android:text="@string/update"
         android:textColor="#5C5C5C"
-        app:layout_constraintEnd_toEndOf="@+id/editTextExpenseDetailsValue"
-        app:layout_constraintStart_toStartOf="@+id/editTextExpenseDetailsValue"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExpenseDetailsValue" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextLimitDetailsValue"
+        app:layout_constraintStart_toStartOf="@+id/editTextLimitDetailsValue"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLimitDetailsValue"
+        tools:ignore="UnknownId" />
 
     <EditText
-        android:id="@+id/editTextExpenseDetailsValue"
+        android:id="@+id/editTextLimitDetailsValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/value"
         android:inputType="number"
-        android:textColorHint="@color/colorText"
-        app:layout_constraintEnd_toEndOf="@+id/expenseDetailsCategorySpinner"
-        app:layout_constraintStart_toStartOf="@+id/expenseDetailsCategorySpinner"
-        app:layout_constraintTop_toBottomOf="@+id/expenseDetailsCategorySpinner" />
-
-    <Spinner
-        android:id="@+id/expenseDetailsCategorySpinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextExpensesDescriptionDetails"
-        app:layout_constraintStart_toStartOf="@+id/editTextExpensesDescriptionDetails"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExpensesDescriptionDetails" />
-
-    <EditText
-        android:id="@+id/editTextExpensesDescriptionDetails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="@string/description"
-        android:inputType="textPersonName"
         android:textColorHint="@color/colorText"
         app:layout_constraintEnd_toEndOf="@+id/textView17"
         app:layout_constraintStart_toStartOf="@+id/textView17"
@@ -59,10 +37,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/detailsExpenses"
+        android:text="@string/detailsLimits"
         android:textColor="@color/colorText"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

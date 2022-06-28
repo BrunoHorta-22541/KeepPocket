@@ -14,6 +14,7 @@ import java.util.List;
 
 public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.IncomeAdapterEventListener {
     private IncomeAdapter adapter;
+    private long userId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,8 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
+        Session activeSession = SessionManager.getActiveSession(this);
+        userId = activeSession.getUserid();
     }
     @Override
     protected void onStart() {
@@ -35,7 +38,7 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
         this.updateIncomeList();
     }
     public void updateIncomeList(){
-        List<Movements> movementsList = Database.getInstance(this).getmovementsDAO().getAll();
+        List<Movements> movementsList = Database.getInstance(this).getmovementsDAO().getIncome(this.userId);
         this.adapter.updateIncomeList(movementsList);
     }
 

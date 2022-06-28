@@ -17,7 +17,11 @@ public interface MovementsDAO {
     @Query("SELECT * FROM Movements WHERE idMovements = :movementsId")
     Movements getById(long movementsId);
 
+    @Query("SELECT * FROM Movements WHERE idUser = :userId AND value>0")
+    List<Movements> getIncome(long userId);
 
+    @Query("SELECT * FROM Movements WHERE idUser = :userId AND value<0")
+    List<Movements> getExpense(long userId);
 
     @Delete
     void delete(Movements movements);

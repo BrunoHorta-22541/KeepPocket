@@ -91,23 +91,26 @@
             android:layout_width="48dp"
             android:layout_height="54dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:onClick="toLimit"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/limiticon"
-            tools:ignore="SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteX="347dp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/imageButton6"
             android:layout_width="48dp"
             android:layout_height="54dp"
+            android:layout_marginStart="24dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="8dp"
             android:onClick="tomain"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/homeicon"
             tools:ignore="SpeakableTextPresentCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>

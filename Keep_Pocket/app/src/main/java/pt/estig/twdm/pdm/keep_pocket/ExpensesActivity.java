@@ -35,7 +35,9 @@ public class ExpensesActivity extends AppCompatActivity implements ExpensesAdapt
 
     @Override
     public void onExpenseClicked(long movementsId) {
-
+        Intent intent = new Intent(this, ExpenseDetails.class);
+        intent.putExtra(ExpenseDetails.KEY_ID, movementsId);
+        startActivity(intent);
     }
 
     @Override

@@ -26,6 +26,7 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
     private long categoryId;
     private String spinnerStringValue;
     ArrayAdapter<String> spinnerAdapter;
+    private long originalInsertDate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,7 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
         int positive = movements.getValue() * (-1);
         String stringValueExpenses = Integer.toString(positive);
         this.valueExpense.setText(stringValueExpenses);
+        this.originalInsertDate = movements.getMovementsDate();
 
 
         spinnerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, new ArrayList<String>());
@@ -57,9 +59,6 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
         spinner.setSelection(getIndex(spinner, spinnerStringValue));
         spinner.setOnItemSelectedListener(this);
     }
-
-
-
     private int getIndex(Spinner spinner, String spinnerStringValue){
         for (int i=0;i<spinner.getCount();i++){
             if (spinner.getItemAtPosition(i).toString().equalsIgnoreCase(spinnerStringValue)){
@@ -70,9 +69,6 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
         return 0;
 
     }
-
-
-
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         itemSelected = (String)adapterView.getItemAtPosition(i);
@@ -91,7 +87,7 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
         int valueExpenseInt = Integer.parseInt(valueExpenseString);
         int valueExpenseNegative= valueExpenseInt * (-1);
         Category category = Database.getInstance(this).getcategoryDAO().getCategoryByName(userId, itemSelected);
-        Movements movements = new Movements(this.movements.getIdMovements(), userId, category.getIdCategory(),valueExpenseNegative, description, System.currentTimeMillis());
+        Movements movements = new Movements(this.movements.getIdMovements(), userId, category.getIdCategory(),valueExpenseNegative, description, originalInsertDate);
         Database.getInstance(this).getmovementsDAO().update(movements);
 
         finish();

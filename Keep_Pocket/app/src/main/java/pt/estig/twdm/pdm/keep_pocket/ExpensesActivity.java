@@ -34,7 +34,7 @@ public class ExpensesActivity extends AppCompatActivity implements ExpensesAdapt
     }
 
     @Override
-    public void onExpenseClicked(long chatsId) {
+    public void onExpenseClicked(long movementsId) {
 
     }
 

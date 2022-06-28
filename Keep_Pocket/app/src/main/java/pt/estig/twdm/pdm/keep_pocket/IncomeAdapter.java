@@ -98,7 +98,7 @@ public class IncomeAdapter extends RecyclerView.Adapter<IncomeAdapter.IncomeView
         }
     }
     public interface IncomeAdapterEventListener{
-        void onIncomeClicked(long chatsId);
-        void onIncomeLongClicked(long chatsId);
+        void onIncomeClicked(long movementsId);
+        void onIncomeLongClicked(long movementsId);
     }
 }

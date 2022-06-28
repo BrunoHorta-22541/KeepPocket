@@ -62,6 +62,7 @@ public class AddLimit extends AppCompatActivity implements AdapterView.OnItemSel
         Category categoryUpdate = new Category(category.getIdCategory(),category.getCategoryName(),limitValueInt,userId);
         Database.getInstance(this).getcategoryDAO().update(categoryUpdate);
 
+        finish();
 
     }
 

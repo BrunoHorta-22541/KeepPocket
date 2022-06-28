@@ -42,8 +42,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
         this.adapter.updateCategoryList(categoryList);
     }
     public void onCategoryClicked(long categoryId) {
-        Intent intent = new Intent(this, CategoryAdapter.class);
-        startActivity(intent);
+
     }
     @Override
     public void onCategoryLongClicked(long categoryId) {

@@ -77,7 +77,8 @@ public class LimitAdapter extends RecyclerView.Adapter<LimitAdapter.LimitViewHol
             this.limitCategoryName.setText(limitCategoryName);
         }
         public void setLimitValue(int limitValue){
-            this.limitValue.setText(limitValue);
+            String stringValueExpenses = Integer.toString(limitValue);
+            this.limitValue.setText(stringValueExpenses);
         }
 
     }

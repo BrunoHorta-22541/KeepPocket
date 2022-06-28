@@ -26,7 +26,8 @@ public interface CategoryDAO {
     @Query("SELECT * FROM Category WHERE idUser = :userId AND categoryName = :nameCategory")
     Category getCategoryByName(long userId, String nameCategory);
 
-
+    @Query("SELECT * FROM Category WHERE idUser = :userId AND `limit` > 0 ")
+    List<Category> getUserCategoryLimit(long userId);
 
 
     @Delete

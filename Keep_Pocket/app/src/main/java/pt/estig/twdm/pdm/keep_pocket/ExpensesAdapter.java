@@ -101,7 +101,7 @@ public class ExpensesAdapter extends RecyclerView.Adapter<ExpensesAdapter.Expens
 
 
     public interface ExpensesAdapterEventListener{
-        void onExpenseClicked(long chatsId);
-        void onExpenseLongClicked(long chatsId);
+        void onExpenseClicked(long movementsId);
+        void onExpenseLongClicked(long movementsId);
     }
 }

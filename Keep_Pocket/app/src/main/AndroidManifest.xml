@@ -46,6 +46,12 @@
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
+            android:name=".IncomeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".LimitDetails"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

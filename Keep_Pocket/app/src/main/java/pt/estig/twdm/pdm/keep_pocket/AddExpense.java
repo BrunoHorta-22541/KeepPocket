@@ -64,4 +64,10 @@ public class AddExpense extends AppCompatActivity  implements AdapterView.OnItem
 
         finish();
     }
+
+    public void previous(View view) {
+        Intent intent = new Intent(this,ExpensesActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

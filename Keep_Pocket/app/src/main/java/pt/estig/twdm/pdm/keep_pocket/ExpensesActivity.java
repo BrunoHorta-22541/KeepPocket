@@ -75,31 +75,37 @@ public class ExpensesActivity extends AppCompatActivity implements ExpensesAdapt
     public void toExpenses(View view) {
         Intent intent= new Intent (this, ExpensesActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void toCategory(View view) {
         Intent intent= new Intent (this, CategoryActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void toIncome(View view) {
         Intent intent= new Intent (this, IncomeActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void toLimit(View view) {
         Intent intent= new Intent (this, LimitActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void tomain(View view) {
         Intent intent= new Intent (this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
 
     public void saveExpense(View view) {
         Intent intent= new Intent (this, AddExpense.class);
         startActivity(intent);
+        finish();
     }
 }

@@ -71,4 +71,9 @@ public class AddIncome extends AppCompatActivity  implements AdapterView.OnItemS
         finish();
     }
 
+    public void previous(View view) {
+        Intent intent = new Intent(this,IncomeActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

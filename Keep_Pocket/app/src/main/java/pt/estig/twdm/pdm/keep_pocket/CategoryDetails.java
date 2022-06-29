@@ -2,6 +2,7 @@ package pt.estig.twdm.pdm.keep_pocket;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -42,6 +43,12 @@ public class CategoryDetails extends AppCompatActivity {
         Category category = new Category(categoryId, nameCategory, categoryLimit, userId);
         Database.getInstance(this).getcategoryDAO().update(category);
 
+        finish();
+    }
+
+    public void previous(View view) {
+        Intent intent = new Intent(this,CategoryActivity.class);
+        startActivity(intent);
         finish();
     }
 }

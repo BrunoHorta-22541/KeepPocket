@@ -2,6 +2,7 @@ package pt.estig.twdm.pdm.keep_pocket;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -66,4 +67,9 @@ public class AddLimit extends AppCompatActivity implements AdapterView.OnItemSel
 
     }
 
+    public void previous(View view) {
+        Intent intent = new Intent(this,LimitActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

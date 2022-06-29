@@ -2,6 +2,7 @@ package pt.estig.twdm.pdm.keep_pocket;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -93,4 +94,9 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
         finish();
     }
 
+    public void previous(View view) {
+        Intent intent = new Intent(this,ExpenseDetails.class);
+        startActivity(intent);
+        finish();
+    }
 }

@@ -38,4 +38,10 @@ public class AddCategory extends AppCompatActivity {
         finish();
 
     }
+
+    public void previous(View view) {
+        Intent intent = new Intent(this,CategoryActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

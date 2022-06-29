@@ -11,9 +11,12 @@ public class LoginManager {
     private static Map<String, pt.estig.twdm.pdm.keep_pocket.User> getUsers() {
         if (users == null) {
             users = new HashMap<>();
-            users.put("user1@teste.pt", new pt.estig.twdm.pdm.keep_pocket.User(1, "user1@teste.pt", "password1"));
-            users.put("user2@teste.pt", new pt.estig.twdm.pdm.keep_pocket.User(2, "user2@teste.pt", "password2"));
-            users.put("user3@teste.pt", new pt.estig.twdm.pdm.keep_pocket.User(3, "user3@teste.pt", "password3"));
+            users.put("22541@stu.ipbeja.pt", new pt.estig.twdm.pdm.keep_pocket.User(1, "22541@stu.ipbeja.pt", "22541"));
+            users.put("22541@stu.ipbeja.pt", new pt.estig.twdm.pdm.keep_pocket.User(2, "22541@stu.ipbeja.pt", "22541"));
+            users.put("22541@stu.ipbeja.pt", new pt.estig.twdm.pdm.keep_pocket.User(3, "22541@stu.ipbeja.pt", "22541"));
+            users.put("22541@stu.ipbeja.pt", new pt.estig.twdm.pdm.keep_pocket.User(1, "22541@stu.ipbeja.pt", "22541"));
+            users.put("22541@stu.ipbeja.pt", new pt.estig.twdm.pdm.keep_pocket.User(2, "22541@stu.ipbeja.pt", "22541"));
+            users.put("22541@stu.ipbeja.pt", new pt.estig.twdm.pdm.keep_pocket.User(3, "22541@stu.ipbeja.pt", "22541"));
         }
         return users;
     }

@@ -38,6 +38,7 @@ public class ExpensesActivity extends AppCompatActivity implements ExpensesAdapt
         Intent intent = new Intent(this, ExpenseDetails.class);
         intent.putExtra(ExpenseDetails.KEY_ID, movementsId);
         startActivity(intent);
+        finish();
     }
 
     @Override
@@ -65,6 +66,7 @@ public class ExpensesActivity extends AppCompatActivity implements ExpensesAdapt
 
         AlertDialog dialog = builder.create();
         dialog.show();
+        finish();
     }
 
     public void updateIncomeList(){

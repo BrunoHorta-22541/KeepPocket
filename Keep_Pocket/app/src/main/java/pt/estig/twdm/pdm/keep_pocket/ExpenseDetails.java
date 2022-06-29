@@ -95,7 +95,7 @@ public class ExpenseDetails extends AppCompatActivity implements AdapterView.OnI
     }
 
     public void previous(View view) {
-        Intent intent = new Intent(this,ExpenseDetails.class);
+        Intent intent = new Intent(this,ExpensesActivity.class);
         startActivity(intent);
         finish();
     }

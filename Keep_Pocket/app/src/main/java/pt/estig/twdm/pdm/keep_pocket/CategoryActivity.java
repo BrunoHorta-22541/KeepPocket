@@ -45,6 +45,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
         Intent intent = new Intent(this, CategoryDetails.class);
         intent.putExtra(CategoryDetails.KEY_ID, categoryId);
         startActivity(intent);
+        finish();
     }
     @Override
     public void onCategoryLongClicked(long categoryId) {
@@ -71,6 +72,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
 
         AlertDialog dialog = builder.create();
         dialog.show();
+        finish();
     }
 
     public void toExpenses(View view) {

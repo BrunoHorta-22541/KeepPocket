@@ -80,7 +80,7 @@ public class IncomeDetails extends AppCompatActivity  implements AdapterView.OnI
     public void onNothingSelected(AdapterView<?> adapterView) {
         Toast.makeText(this, "Nenhum item selecionado", Toast.LENGTH_SHORT).show();
     }
-    public void updateExpense(View view) {
+    public void updateIncome(View view) {
         String description = this.descriptionIncome.getText().toString();
         String valueExpenseString = this.valueIncome.getText().toString();
         int valueExpenseInt = Integer.parseInt(valueExpenseString);

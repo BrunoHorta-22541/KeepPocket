@@ -108,5 +108,6 @@ public class LimitActivity extends AppCompatActivity implements LimitAdapter.Lim
 
         AlertDialog dialog = builder.create();
         dialog.show();
+        finish();
     }
 }

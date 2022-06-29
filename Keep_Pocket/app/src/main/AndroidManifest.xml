@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Keep_Pocket">
         <activity
+            android:name=".CategoryDetails"
+            android:exported="false" />
+        <activity
             android:name=".ExpenseDetails"
             android:exported="false" />
         <activity

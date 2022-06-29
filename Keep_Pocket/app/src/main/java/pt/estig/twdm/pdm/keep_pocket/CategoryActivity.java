@@ -42,7 +42,9 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
         this.adapter.updateCategoryList(categoryList);
     }
     public void onCategoryClicked(long categoryId) {
-
+        Intent intent = new Intent(this, CategoryDetails.class);
+        intent.putExtra(CategoryDetails.KEY_ID, categoryId);
+        startActivity(intent);
     }
     @Override
     public void onCategoryLongClicked(long categoryId) {

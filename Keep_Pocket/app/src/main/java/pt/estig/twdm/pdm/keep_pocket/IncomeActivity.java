@@ -46,7 +46,7 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
     @Override
     public void onIncomeClicked(long movementsId) {
         Intent intent = new Intent(this,IncomeDetails.class);
-        intent.putExtra(ExpenseDetails.KEY_ID, movementsId);
+        intent.putExtra(IncomeDetails.KEY_ID, movementsId);
         startActivity(intent);
         finish();
     }
@@ -76,6 +76,7 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
 
         AlertDialog dialog = builder.create();
         dialog.show();
+        finish();
     }
 
     public void toExpenses(View view) {

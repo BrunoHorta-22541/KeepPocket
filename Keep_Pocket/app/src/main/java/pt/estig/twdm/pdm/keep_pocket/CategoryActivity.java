@@ -72,7 +72,6 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
 
         AlertDialog dialog = builder.create();
         dialog.show();
-        finish();
     }
 
     public void toExpenses(View view) {

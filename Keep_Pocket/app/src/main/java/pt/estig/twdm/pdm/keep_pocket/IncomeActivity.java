@@ -76,7 +76,6 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
 
         AlertDialog dialog = builder.create();
         dialog.show();
-        finish();
     }
 
     public void toExpenses(View view) {

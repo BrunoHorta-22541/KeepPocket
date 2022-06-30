@@ -13,20 +13,23 @@ Aplicação de Gestão para gastos económicos
 
 ## Requisitos
 ### Requisitos Minimos
-* Vários Requisitos
-* Requisitos 1
-* Requesitos 2
+* Recyclerview para os dados da database;
+* Editar e apagar dados;
+* Inserir dados;
 
 ### Requisitos Avançados
-* Requisitos 1
-* Requisitos 2
-* Requisitos 3
+* Fazer sistema de login com Data Base;
+* Navegação com drawers e fragments;
+* Implementação de notificações;
+* Implementação do QrCode;
+* Validação;
+* Implementação de gráfico das despesas agrupadas por categoria;
 
 ## Lista de Tarefas
 - [x] Login
 - [x] Listas para despesas, rendimentos, limites, categorias
 - [x] Inserts para despesas, rendimentos, limites, categorias
-- [ ] Edits para despesas, rendimentos, limites, categorias
+- [x] Edits para despesas, rendimentos, limites, categorias
 - [x] Deletes despesas, rendimentos, limites, categorias
 
 ## Links Importantes

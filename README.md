@@ -18,7 +18,7 @@ Aplicação de Gestão para gastos económicos
 * Inserir dados;
 
 ### Requisitos Avançados
-* Fazer sistema de login com Data Base;
+* Fazer sistema de login com database;
 * Navegação com drawers e fragments;
 * Implementação de notificações;
 * Implementação do QrCode;

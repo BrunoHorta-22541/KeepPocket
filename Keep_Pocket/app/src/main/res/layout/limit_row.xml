@@ -32,6 +32,8 @@
             android:layout_marginTop="8dp"
             android:text="@string/limitValue"
             android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/limitCategoryname"
             app:layout_constraintTop_toBottomOf="@+id/limitCategoryname" />
 
@@ -54,6 +56,8 @@
             android:layout_marginTop="16dp"
             android:text="@string/categoryName"
             android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

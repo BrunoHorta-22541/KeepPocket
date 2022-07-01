@@ -25,16 +25,9 @@ public class AddCategory extends AppCompatActivity {
 
         Category category = new Category(0,nameCategory,0,userId);
         Database.getInstance(this).getcategoryDAO().insert(category);
-        /*
-        Database.getInstance(this).getcategoryDAO().confirmIfCategoryIsOriginal(userId,nameCategory);
-        Category confirmCategory = Database.getInstance(this).getcategoryDAO().confirmIfCategoryIsOriginal(userId,nameCategory);
-        if(confirmCategory == null ){
-            Intent intent = new Intent(this, AddCategory.class);
-            startActivity(intent);
-        }else{
-            Category category = new Category(0,nameCategory,0,userId);
-            Database.getInstance(this).getcategoryDAO().insert(category);
-        }*/
+
+        Intent intent = new Intent(this,CategoryActivity.class);
+        startActivity(intent);
         finish();
 
     }

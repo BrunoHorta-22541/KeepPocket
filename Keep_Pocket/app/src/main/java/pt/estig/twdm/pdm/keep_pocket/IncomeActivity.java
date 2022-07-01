@@ -40,6 +40,7 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
     public void updateIncomeList(){
         List<Movements> movementsList = Database.getInstance(this).getmovementsDAO().getIncome(this.userId);
         this.adapter.updateIncomeList(movementsList);
+
     }
 
 

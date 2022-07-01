@@ -16,11 +16,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class MainActivity extends AppCompatActivity implements MainActivityAdapter.MainActivityAdapterEventListener{
+public class MainActivity extends AppCompatActivity {
 
-
-    private MainActivityAdapter adapter;
-    //private long userId;
 
 
     @Override
@@ -38,11 +35,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityAdapt
         TextView textViewUsername = findViewById(R.id.textViewUsername);
         textViewUsername.setText(activeSession.getUsername());
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerViewMain);
-        this.adapter = new MainActivityAdapter(this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(layoutManager);
 
     }
 
@@ -101,13 +93,5 @@ public class MainActivity extends AppCompatActivity implements MainActivityAdapt
         startActivity(intent);
     }
 
-    @Override
-    public void onCategoryMainClicked(long categoryId) {
 
-    }
-
-    @Override
-    public void onCategoryMainLongClicked(long categoryId) {
-
-    }
 }

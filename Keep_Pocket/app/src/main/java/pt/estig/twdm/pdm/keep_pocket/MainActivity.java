@@ -9,13 +9,18 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainActivityAdapter.MainActivityAdapterEventListener{
 
+
+    private MainActivityAdapter adapter;
+    //private long userId;
 
 
     @Override
@@ -33,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         TextView textViewUsername = findViewById(R.id.textViewUsername);
         textViewUsername.setText(activeSession.getUsername());
 
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewMain);
+        this.adapter = new MainActivityAdapter(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(layoutManager);
 
     }
 
@@ -89,5 +99,15 @@ public class MainActivity extends AppCompatActivity {
     public void tomain(View view) {
         Intent intent= new Intent (this, MainActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onCategoryMainClicked(long categoryId) {
+
+    }
+
+    @Override
+    public void onCategoryMainLongClicked(long categoryId) {
+
     }
 }

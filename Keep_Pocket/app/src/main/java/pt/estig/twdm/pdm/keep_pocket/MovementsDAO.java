@@ -23,6 +23,9 @@ public interface MovementsDAO {
     @Query("SELECT * FROM Movements WHERE idUser = :userId AND value<0")
     List<Movements> getExpense(long userId);
 
+    @Query("SELECT SUM(value) AS totalSpent, * FROM Movements WHERE idUser = :userId GROUP BY idCategory")
+    List<Movements> getTotalByUserId(long userId);
+
     @Delete
     void delete(Movements movements);
 

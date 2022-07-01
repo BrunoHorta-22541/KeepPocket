@@ -36,3 +36,10 @@ Aplicação de Gestão para gastos económicos
 * [Artigo](https://developer.android.com/training/data-storage/room/)
 * [Artigo](https://stackoverflow.com/questions/61875405/fill-spinner-with-room-database)
 * [Artigo](https://stackoverflow.com/questions/2390102/how-to-set-selected-item-of-spinner-by-value-not-by-position)
+
+## Vídeo
+[Video.zip](https://github.com/BrunoHorta-22541/KeepPocket/files/9030965/Video.zip)
+
+
+## Apresentação PP
+[ProjetoKeePocket.pdf](https://github.com/BrunoHorta-22541/KeepPocket/files/9030961/ProjetoKeePocket.pdf)

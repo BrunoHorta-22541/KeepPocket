@@ -8,6 +8,9 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.List;
@@ -77,6 +80,34 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
 
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.logout:
+                // código do logout
+                this.logout();
+                return true;
+            case R.id.settings:
+                // Abrir Activity Settings
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+    public void logout() {
+        SessionManager.clearSession(this);
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void toExpenses(View view) {

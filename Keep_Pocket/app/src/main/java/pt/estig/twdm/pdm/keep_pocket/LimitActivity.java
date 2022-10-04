@@ -87,8 +87,8 @@ public class LimitActivity extends AppCompatActivity implements LimitAdapter.Lim
     public void onLimitLongClicked(long categoryId) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("Delete Category?");
-        builder.setMessage("Do you really want to delete this Category?");
+        builder.setTitle("Delete Limit?");
+        builder.setMessage("Do you really want to delete this Limit?");
 
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
@@ -100,8 +100,9 @@ public class LimitActivity extends AppCompatActivity implements LimitAdapter.Lim
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 // Código a ser executado quando o utilizador clica em Delete
-                Category category = Database.getInstance(LimitActivity.this).getcategoryDAO().getById(categoryId);
-                Database.getInstance(LimitActivity.this).getcategoryDAO().delete(category);
+                Category categoryname = Database.getInstance(LimitActivity.this).getcategoryDAO().getById(categoryId);
+                Category category = new Category(categoryId,categoryname.getCategoryName(),0,userId);
+                Database.getInstance(LimitActivity.this).getcategoryDAO().update(category);
                 LimitActivity.this.updateCategoryList();
             }
         });

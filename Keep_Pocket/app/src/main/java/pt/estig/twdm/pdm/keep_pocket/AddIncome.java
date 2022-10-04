@@ -68,6 +68,9 @@ public class AddIncome extends AppCompatActivity  implements AdapterView.OnItemS
         Movements movements = new Movements(0, userId, category.getIdCategory(), valueIncomeInt, description, System.currentTimeMillis());
         Database.getInstance(this).getmovementsDAO().insert(movements);
 
+        Intent intent = new Intent(this,IncomeActivity.class);
+        startActivity(intent);
+
         finish();
     }
 

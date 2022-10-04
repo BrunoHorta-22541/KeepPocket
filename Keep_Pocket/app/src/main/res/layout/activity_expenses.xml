@@ -48,7 +48,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/navbar"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:background="@color/recyclerbackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,12 +59,12 @@
             android:id="@+id/imageButton"
             android:layout_width="48dp"
             android:layout_height="54dp"
+            android:layout_marginTop="8dp"
             android:onClick="toExpenses"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
             app:layout_constraintEnd_toStartOf="@+id/imageButton3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton6"
-            app:layout_constraintTop_toTopOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/expensesicon"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -72,12 +72,12 @@
             android:id="@+id/imageButton2"
             android:layout_width="48dp"
             android:layout_height="54dp"
+            android:layout_marginTop="8dp"
             android:onClick="toCategory"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
             app:layout_constraintEnd_toStartOf="@+id/imageButton5"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton3"
-            app:layout_constraintTop_toTopOf="@+id/imageButton5"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/categoryicon"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -85,12 +85,12 @@
             android:id="@+id/imageButton3"
             android:layout_width="48dp"
             android:layout_height="54dp"
+            android:layout_marginTop="8dp"
             android:onClick="toIncome"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toTopOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/incomeicon"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -98,8 +98,9 @@
             android:id="@+id/imageButton5"
             android:layout_width="48dp"
             android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
             android:onClick="toLimit"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
@@ -111,13 +112,79 @@
             android:id="@+id/imageButton6"
             android:layout_width="48dp"
             android:layout_height="54dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
             android:onClick="tomain"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
             app:layout_constraintEnd_toStartOf="@+id/imageButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/homeicon"
             tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/home"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+            app:layout_constraintStart_toStartOf="@+id/imageButton6"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/expenses"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/income"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+            app:layout_constraintStart_toStartOf="@+id/imageButton3"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/category"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/limit"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+            app:layout_constraintStart_toStartOf="@+id/imageButton5"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

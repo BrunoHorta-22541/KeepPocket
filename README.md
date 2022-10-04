@@ -13,23 +13,33 @@ Aplicação de Gestão para gastos económicos
 
 ## Requisitos
 ### Requisitos Minimos
-* Vários Requisitos
-* Requisitos 1
-* Requesitos 2
+* Recyclerview para os dados da database;
+* Editar e apagar dados;
+* Inserir dados;
 
 ### Requisitos Avançados
-* Requisitos 1
-* Requisitos 2
-* Requisitos 3
+* Fazer sistema de login com database;
+* Navegação com drawers e fragments;
+* Implementação de notificações;
+* Implementação do QrCode;
+* Validação;
+* Implementação de gráfico das despesas agrupadas por categoria;
 
 ## Lista de Tarefas
 - [x] Login
 - [x] Listas para despesas, rendimentos, limites, categorias
 - [x] Inserts para despesas, rendimentos, limites, categorias
-- [ ] Edits para despesas, rendimentos, limites, categorias
+- [x] Edits para despesas, rendimentos, limites, categorias
 - [x] Deletes despesas, rendimentos, limites, categorias
 
 ## Links Importantes
 * [Artigo](https://developer.android.com/training/data-storage/room/)
 * [Artigo](https://stackoverflow.com/questions/61875405/fill-spinner-with-room-database)
 * [Artigo](https://stackoverflow.com/questions/2390102/how-to-set-selected-item-of-spinner-by-value-not-by-position)
+
+## Vídeo
+[Video.zip](https://github.com/BrunoHorta-22541/KeepPocket/files/9030965/Video.zip)
+
+
+## Apresentação PP
+[ProjetoKeePocket.pdf](https://github.com/BrunoHorta-22541/KeepPocket/files/9030961/ProjetoKeePocket.pdf)

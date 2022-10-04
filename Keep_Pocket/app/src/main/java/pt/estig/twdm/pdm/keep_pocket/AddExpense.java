@@ -62,6 +62,9 @@ public class AddExpense extends AppCompatActivity  implements AdapterView.OnItem
         Movements movements = new Movements(0, userId, category.getIdCategory(),valueExpenseNegative, description, System.currentTimeMillis());
         Database.getInstance(this).getmovementsDAO().insert(movements);
 
+        Intent intent = new Intent(this,ExpensesActivity.class);
+        startActivity(intent);
+
         finish();
     }
 

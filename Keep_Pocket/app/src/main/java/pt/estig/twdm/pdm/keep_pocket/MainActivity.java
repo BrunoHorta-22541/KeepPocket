@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -90,4 +92,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent= new Intent (this, MainActivity.class);
         startActivity(intent);
     }
+
+
 }

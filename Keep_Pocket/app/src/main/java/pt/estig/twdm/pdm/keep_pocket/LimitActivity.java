@@ -81,6 +81,11 @@ public class LimitActivity extends AppCompatActivity implements LimitAdapter.Lim
 
     @Override
     public void onLimitClicked(long categoryId) {
+            Intent intent = new Intent(this,LimitDetails.class);
+            intent.putExtra(LimitDetails.KEY_ID, categoryId);
+            startActivity(intent);
+            finish();
+
     }
 
     @Override

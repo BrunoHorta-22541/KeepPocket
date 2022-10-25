@@ -1,0 +1,34 @@
+{
+   "category":[
+      {
+         "categoryName":"Gaming",
+         "expenses":"15$",
+         "limit":"20$"
+      },
+      {
+         "categoryName":"Saúde",
+         "expenses":"55$",
+         "limit":"100$"
+      },
+      {
+         "categoryName":"Estudos",
+         "expenses":"630$",
+         "limit":"700$"
+      },
+      {
+         "categoryName":"Água",
+         "expenses":"30$",
+         "limit":"40$"
+      },
+      {
+         "categoryName":"Luz",
+         "expenses":"25$",
+         "limit":"25$"
+      },
+      {
+         "categoryName":"Alimentação",
+         "expenses":"150$",
+         "limit":"175$"
+      }
+   ]
+}

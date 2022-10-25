@@ -28,6 +28,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'pt.estig.twdm.pdm.keep_pocket'
 }
 
 dependencies {

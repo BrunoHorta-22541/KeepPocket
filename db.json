@@ -2,33 +2,89 @@
    "category":[
       {
          "categoryName":"Gaming",
-         "expenses":"15$",
+         "categoryId":"1",
          "limit":"20$"
       },
       {
          "categoryName":"Saúde",
-         "expenses":"55$",
+         "categoryId":"2",
          "limit":"100$"
       },
       {
          "categoryName":"Estudos",
-         "expenses":"630$",
+         "categoryId":"3",
          "limit":"700$"
       },
       {
          "categoryName":"Água",
-         "expenses":"30$",
+         "categoryId":"4",
          "limit":"40$"
       },
       {
          "categoryName":"Luz",
-         "expenses":"60$",
+         "categoryId":"5",
          "limit":"25$"
       },
       {
          "categoryName":"Alimentação",
-         "expenses":"150$",
+         "categoryId":"6",
          "limit":"175$"
       }
+   ]
+   "movements":[
+       {
+         "idMovements":"1",
+         "idUser":"1",
+         "value":"20$",
+         "description":"placeholder"
+      },
+      {
+         "idMovements":"2",
+         "idUser":"1",
+         "value":"55$",
+         "description":"placeholder"
+      },
+      {
+         "idMovements":"3",
+         "idUser":"1",
+         "value":"630$",
+         "description":"placeholder"
+      },
+      {
+         "idMovements":"4",
+         "idUser":"1",
+         "value":"30$",
+         "description":"placeholder"
+      },
+      {
+         "idMovements":"5",
+         "idUser":"1",
+         "value":"60$",
+         "description":"placeholder"
+      },
+      {
+         "idMovements":"6",
+         "idUser":"1",
+         "value":"150$",
+         "description":"placeholder"
+      }
+   ]
+   "users":[
+      {
+         "id":"1",
+         "e-mail":"23104@stu.ipbeja.pt",
+         "password":"1234"
+      },
+      {
+         "id":"2",
+         "e-mail":"22541@stu.ipbeja.pt",
+         "password":"1234"
+      },
+      {
+         "id":"3",
+         "e-mail":"22652@stu.ipbeja.pt",
+         "password":"1234"
+      }
+   
    ]
 }

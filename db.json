@@ -30,9 +30,9 @@
          "categoryId":"6",
          "limit":"175$"
       }
-   ]
+   ],
    "movements":[
-       {
+      {
          "idMovements":"1",
          "idUser":"1",
          "value":"20$",
@@ -68,7 +68,7 @@
          "value":"150$",
          "description":"placeholder"
       }
-   ]
+   ],
    "users":[
       {
          "id":"1",
@@ -85,6 +85,5 @@
          "e-mail":"22652@stu.ipbeja.pt",
          "password":"1234"
       }
-   
    ]
 }

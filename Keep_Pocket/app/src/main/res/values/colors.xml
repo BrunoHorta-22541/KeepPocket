@@ -13,4 +13,5 @@
 
 
     <color name="colorText">#96CF4C</color>
+    <color name="colorPrimaryDark" />
 </resources>
